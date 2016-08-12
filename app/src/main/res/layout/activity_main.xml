@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
+    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ec87fa"
+    android:id="@+id/rltvLayout">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/imbtnFruits"
+        android:visibility="visible"
+        android:id="@+id/main_linear_layout">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:background="@drawable/shape"
+            android:layout_marginBottom="5dp">
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imbtnAnimal"
+                android:scaleType="center"
+
+                android:layout_alignTop="@+id/imbtnNature"
+                android:background="@drawable/animals"
+                android:layout_weight="1"
+                android:layout_marginTop="9dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="5dp" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imbtnFruits"
+                android:scaleType="center"
+
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/fruits"
+                android:layout_weight="1"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imbtnNature"
+                android:background="@drawable/nature"
+                android:scaleType="center"
+
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="9dp"
+                android:layout_marginTop="2dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="4"
+            android:background="@drawable/shape"
+            android:layout_marginTop="5dp">
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imbtnShapes"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:focusable="false"
+                android:background="@drawable/shapes"
+                android:adjustViewBounds="true"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="14dp" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imbtnColors"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/colorss"
+                android:layout_marginTop="6dp" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imbtnNumbers"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:background="@drawable/learningnumbers"
+                android:layout_marginRight="9dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/view_pager"
+        android:visibility="invisible" >
+
+    </android.support.v4.view.ViewPager>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/homebtnRet"
+        android:background="@drawable/homebuttonret"
+        android:gravity="center"
+        android:layout_alignTop="@+id/view_pager"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnPlay"
+        android:background="@drawable/playsound"
+        android:gravity="center"
+        android:layout_alignTop="@+id/view_pager"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible"
+        android:layout_marginLeft="500dp" />
+
+
+</RelativeLayout>

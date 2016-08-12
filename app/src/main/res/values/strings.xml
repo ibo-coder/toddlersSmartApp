@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Toddler\'s Smart Book</string>
+    <string name="title_activity_animals">Animals</string>
+<string name="title_activity_fruits">Fruits</string>
+    <string name="title_activity_nature">Nature</string>
+    <string name="action_settings">Settings</string>
+</resources>
